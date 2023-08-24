@@ -7,8 +7,9 @@ var twoSum = (nums, target,) => {
         const sumIdx = history.get(complement);
 
         const isTarget = history.has(complement)
-        if (isTarget) return [ idx, sumIdx ];
-
+        if (isTarget) {
+            return [ idx, sumIdx ];
+        }
         history.set(num, index);                        
     }
 }
